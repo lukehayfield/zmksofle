@@ -93,11 +93,11 @@
             //                |      |       |       |      |      |  |      |      |      |       |      |
 
             bindings = <
-&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                    &trans     &trans    &trans    &trans     &trans     &trans
-&trans      &kp INS       &kp PSCRN     &kp K_CMENU   &none         &none                           &kp PG_UP  &none     &kp UP    &none      &kp LG(P)  &trans
-&trans      &kp LG(A)     &kp LG(S)     &kp LG(D)     &kp LG(F)     &kp CLCK                        &kp PG_DN  &kp LEFT  &kp DOWN  &kp RIGHT  &kp DEL    &kp BSPC
-&trans      &kp LG(Z)     &kp LG(X)     &kp LG(C)     &kp LG(V)     &kp LG(B)     &trans    &trans  &none      &none     &none     &none      &none      &trans
-                          &trans        &trans        &trans        &trans        &trans    &trans  &trans     &trans    &trans    &trans
+&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                    &trans     &trans    &trans          &trans            &trans     &trans
+&trans      &kp INS       &kp PSCRN     &kp K_CMENU   &none         &none                           &kp PG_UP  &kp HOME  &kp UP          &kp END           &kp LG(P)  &kp LG(LS(K))
+&trans      &kp LG(A)     &kp LG(S)     &kp LG(D)     &kp LG(F)     &kp CLCK                        &kp PG_DN  &kp LEFT  &kp DOWN        &kp RIGHT         &kp DEL    &kp BSPC
+&trans      &kp LG(Z)     &kp LG(X)     &kp LG(C)     &kp LG(V)     &kp LG(B)     &trans    &trans  &none      &none     &kp LA(LS(UP))  &kp LA(LS(DOWN))  &none      &trans
+                          &trans        &trans        &trans        &trans        &trans    &trans  &trans     &trans    &trans          &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
