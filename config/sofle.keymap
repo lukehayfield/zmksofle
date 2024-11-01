@@ -45,6 +45,7 @@
             #binding-cells = <2>;
             flavor = "tap-preferred";
             tapping-term-ms = <350>;
+            quick-tap-ms = <300>;
         };
 
         ht_mo: ht_mo {
