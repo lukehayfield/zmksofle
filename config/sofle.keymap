@@ -45,6 +45,7 @@
             flavor = "tap-preferred";
             tapping-term-ms = <350>;
             quick-tap-ms = <300>;
+            hold-trigger-on-release;
         };
 
         ht_mo: ht_mo {
