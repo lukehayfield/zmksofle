@@ -91,7 +91,9 @@
                                   &kp LEFT_CONTROL   &kp LALT         &kp LEFT_GUI      &ht_mo 1 RET       &kp SPACE           &kp SPACE   &ht_mo 2 RET     &ht_tp LEFT_BRACE LEFT_BRACKET  &ht_tp RIGHT_BRACE RIGHT_BRACKET  &ht_tp UNDERSCORE MINUS
             >;
 
-            sensor-bindings = <&inc_dec_kp UP DOWN>, <&inc_dec_kp LEFT RIGHT>;
+            sensor-bindings =
+                <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>,
+                <&inc_dec_kp LC(LEFT) LC(RIGHT)>;
         };
 
         symbol_layer {
@@ -127,11 +129,11 @@
             //                |      |       |       |      |      |  |      |      |      |       |      |
 
             bindings = <
-&bt BT_CLR      &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                    &trans     &trans    &trans          &trans            &trans     &trans
-&trans          &kp INS       &kp PSCRN     &kp K_CMENU   &none         &none                           &kp PG_UP  &kp HOME  &kp UP          &kp END           &kp LG(P)  &kp LG(LS(K))
-&trans          &kp LG(A)     &kp LG(S)     &kp LG(D)     &kp LG(F)     &kp CLCK                        &kp PG_DN  &kp LEFT  &kp DOWN        &kp RIGHT         &kp DEL    &kp BSPC
-&kp LEFT_BRACE  &kp LG(Z)     &kp LG(X)     &kp LG(C)     &kp LG(V)     &kp LG(B)     &trans    &trans  &none      &none     &kp LA(LS(UP))  &kp LA(LS(DOWN))  &none      &kp RIGHT_BRACE
-                              &trans        &trans        &trans        &trans        &trans    &trans  &trans     &trans    &trans          &trans
+&bt BT_CLR      &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                    &trans     &trans    &trans        &trans         &trans     &trans
+&trans          &kp INS       &kp PSCRN     &kp K_CMENU   &none         &none                           &kp PG_UP  &kp HOME  &kp UP        &kp END        &kp LG(P)  &kp LG(LS(K))
+&trans          &kp LG(A)     &kp LG(S)     &kp LG(D)     &kp LG(F)     &kp CLCK                        &kp PG_DN  &kp LEFT  &kp DOWN      &kp RIGHT      &kp DEL    &kp BSPC
+&kp LEFT_BRACE  &kp LG(Z)     &kp LG(X)     &kp LG(C)     &kp LG(V)     &kp LG(B)     &trans    &trans  &none      &none     &kp LC(LEFT)  &kp LC(RIGHT)  &none      &kp RIGHT_BRACE
+                              &trans        &trans        &trans        &trans        &trans    &trans  &trans     &trans    &trans        &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
