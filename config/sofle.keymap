@@ -17,6 +17,7 @@
 &mt {
     tapping-term-ms = <350>;
     flavor = "balanced";
+    hold-trigger-on-release;
 };
 
 / {
