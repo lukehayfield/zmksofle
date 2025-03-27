@@ -68,20 +68,6 @@
             quick-tap-ms = <200>;
             flavor = "tap-preferred";
         };
-
-        hold_cmd = &macro_tap {
-            timeout-ms = <300>;
-            tap-binding = <&kp>;
-            hold-binding = <&macro_press &kp LCMD>;
-            slow-release;
-        };
-
-        hold_shift = &macro_tap {
-            timeout-ms = <300>;
-            tap-binding = <&kp>;
-            hold-binding = <&macro_press &kp LSHIFT>;
-            slow-release;
-        };
     };
 
     keymap {
