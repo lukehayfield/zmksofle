@@ -27,10 +27,10 @@
     };
 
     macros {
-        new_macro: new_macro {
+        TEST: new_macro {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press>;
+            bindings = <&macro_tap>;
             label = "NEW_MACRO";
         };
     };
@@ -45,6 +45,7 @@
             flavor = "balanced";
             tapping-term-ms = <350>;
             quick-tap-ms = <300>;
+            hold-trigger-on-release;
         };
 
         ht_mo: ht_mo {
@@ -169,6 +170,16 @@
             sensor-bindings =
                 <&inc_dec_kp C_VOL_UP C_VOL_DN>,
                 <&inc_dec_kp LC(LEFT) LC(RIGHT)>;
+        };
+
+        layer_5 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+            >;
         };
     };
 };
