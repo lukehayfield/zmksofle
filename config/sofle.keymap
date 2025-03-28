@@ -16,7 +16,7 @@
 
 &mt {
     tapping-term-ms = <350>;
-    flavor = "balanced";
+    flavor = "tap-preferred";
     hold-trigger-on-release;
 };
 
@@ -48,7 +48,7 @@
             bindings = <&mt>, <&kp>;
 
             #binding-cells = <2>;
-            flavor = "balanced";
+            flavor = "tap-preferred";
             tapping-term-ms = <350>;
             quick-tap-ms = <300>;
             hold-trigger-on-release;
