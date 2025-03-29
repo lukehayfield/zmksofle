@@ -14,12 +14,6 @@
 #define RAISE 2
 #define ADJUST 3
 
-&mt {
-    tapping-term-ms = <350>;
-    flavor = "tap-preferred";
-    hold-trigger-on-release;
-};
-
 / {
     // Activate ADJUST layer by pressing raise and lower
 
