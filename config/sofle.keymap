@@ -39,12 +39,12 @@
         ht_tp: ht_tp {
             compatible = "zmk,behavior-hold-tap";
             label = "HT_TP";
-            bindings = <&mt>, <&kp>;
+            bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
             flavor = "tap-preferred";
             tapping-term-ms = <350>;
-            quick-tap-ms = <300>;
+            quick-tap-ms = <350>;
             hold-trigger-on-release;
         };
 
