@@ -22,3 +22,6 @@ include:
     shield: sofle_left nice_oled
   - board: nice_nano_v2
     shield: sofle_right nice_oled
+
+cmake-args: 
+  -DCONFIG_NICE_OLED_GEM_ANIMATION=n
