@@ -42,7 +42,7 @@
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
-            flavor = "tap-preferred";
+            flavor = "balanced";
             tapping-term-ms = <350>;
             quick-tap-ms = <300>;
         };
@@ -55,7 +55,7 @@
             #binding-cells = <2>;
             tapping-term-ms = <300>;
             quick-tap-ms = <300>;
-            flavor = "tap-unless-interrupted";
+            flavor = "balanced";
         };
 
         td_ls: td_ls {
