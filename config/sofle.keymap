@@ -103,8 +103,8 @@
                 <&inc_dec_kp LC(LEFT) LC(RIGHT)>;
         };
 
-        symbol_layer {
-            display-name = "SYMBOL";
+        number_layer {
+            display-name = "NUMBER";
 
             // TODO: Some binds are waiting for shifted keycode support.
             // ------------------------------------------------------------------------------------------------------------
@@ -115,11 +115,11 @@
             //               |     |      |      |      |        |  |       |      |       |       |      |
 
             bindings = <
-&bt BT_CLR  &bt BT_SEL 0   &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                    &kp C_REWIND  &kp C_PLAY_PAUSE  &kp C_FAST_FORWARD  &kp C_MUTE         &kp K_VOLUME_DOWN  &kp C_VOLUME_UP
-&none       &kp LG(LC(Q))  &none         &none         &none         &none                           &none         &kp LA(LC(U))     &kp LA(LC(UP))      &kp LA(LC(I))      &kp LA(LC(E))      &kp LA(LC(D))
-&none       &none          &none         &none         &none         &none                           &none         &kp LA(LC(LEFT))  &kp LA(LC(RET))     &kp LA(LC(RIGHT))  &none              &kp LA(LC(F))
-&none       &none          &none         &none         &none         &none         &none     &none   &none         &kp LA(LC(J))     &kp LA(LC(DOWN))    &kp LA(LC(K))      &kp LA(LC(T))      &kp LA(LC(G))
-                           &none         &none         &none         &trans        &trans    &trans  &trans        &kp LC(LEFT)      &kp LC(RIGHT)       &none
+&bt BT_CLR  &bt BT_SEL 0     &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                    &kp C_REWIND  &kp C_PLAY_PAUSE  &kp C_FAST_FORWARD  &kp C_MUTE            &kp K_VOLUME_DOWN      &kp C_VOLUME_UP
+&kp ESCAPE  &kp EXCLAMATION  &kp AT        &kp POUND     &kp DOLLAR    &kp PERCENT                     &kp CARET     &kp AMPERSAND     &kp ASTERISK        &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &none
+&none       &kp NUMBER_1     &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5                    &kp NUMBER_6  &kp NUMBER_7      &kp NUMBER_8        &kp NUMBER_9          &kp NUMBER_0           &none
+&none       &none            &none         &none         &none         &none         &none     &none   &none         &none             &none               &none                 &none                  &none
+                             &none         &none         &none         &trans        &trans    &trans  &trans        &none             &none               &none
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
