@@ -11,8 +11,6 @@
 
 &nice_view_adapter {
     cs-gpios = <&pro_micro 0 GPIO_ACTIVE_HIGH>;
-    reset-gpios = <&pro_micro 1 GPIO_ACTIVE_LOW>;
-    dc-gpios = <&pro_micro 2 GPIO_ACTIVE_HIGH>;
 };
 
 #define BASE 0
