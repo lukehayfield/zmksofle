@@ -109,7 +109,7 @@
 &kp ESC  &kp NUMBER_1  &kp NUMBER_2           &kp NUMBER_3       &kp NUMBER_4       &kp NUMBER_5                                  &kp NUMBER_6  &kp N7              &kp NUMBER_8        &kp NUMBER_9            &kp NUMBER_0   &kp MINUS
 &kp ESC  &kp Q         &kp W                  &kp F              &kp P              &kp B                                         &kp J         &kp L               &kp U               &kp Y                   &kp SEMICOLON  &kp MINUS
 &kp TAB  &kp A         &ht_tp LEFT_CONTROL R  &ht_tp LEFT_ALT S  &ht_tp LEFT_GUI T  &kp G                                         &kp M         &ht_tp RIGHT_GUI N  &ht_tp RIGHT_ALT E  &ht_tp RIGHT_CONTROL I  &kp O          &kp SQT
-&trans   &kp X         &kp C                  &kp D              &kp V              &kp Z         &kp C_PLAY_PAUSE    &kp C_NEXT  &kp K         &kp H               &kp COMMA           &kp PERIOD              &kp SLASH      &trans
+&trans   &kp Z         &kp X                  &kp C              &kp D              &kp V         &kp C_PLAY_PAUSE    &kp C_NEXT  &kp K         &kp H               &kp COMMA           &kp PERIOD              &kp SLASH      &trans
                        &kp LEFT_CONTROL       &kp LALT           &kp LEFT_GUI       &trans        &kp SPACE           &kp SPACE   &trans        &kp LEFT_BRACKET    &kp RIGHT_BRACKET   &kp BACKSLASH
             >;
 
