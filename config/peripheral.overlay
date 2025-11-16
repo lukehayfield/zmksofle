@@ -1,0 +1,22 @@
+{
+    iqs5xx: iqs5xx@44 {
+        compatible = "azoteq,iqs5xx";
+        reg = <0x44>;
+        label = "TPS43";
+
+        irq-gpios = <&gpio0 10 GPIO_ACTIVE_LOW>;
+        reset-gpios = <&gpio0 11 GPIO_ACTIVE_LOW>;
+
+        status = "okay";
+    };
+};
+
+&kscan {
+    status = "disabled";
+};
+
+&iqs5xx {
+    taps-enabled;
+    gestures-enabled;
+    scroll-mode;
+};
