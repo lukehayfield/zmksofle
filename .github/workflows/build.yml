@@ -1,26 +1,5 @@
-name: Build ZMK
-
-on:
-  push:
-  pull_request:
-  workflow_dispatch:
+on: [push, pull_request, workflow_dispatch]
 
 jobs:
   build:
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Checkout repo
-        uses: actions/checkout@v3
-
-      - name: Install dependencies
-        run: |
-          sudo apt update
-          sudo apt install -y git python3-pip ninja-build gperf ccache dfu-util
-          pip3 install west
-
-      - name: Update west modules
-        run: west update
-
-      - name: Build firmware
-        run: west build -s app -b nice_nano_v2
+    uses: lukehayfield/zmk/.github/workflows/build-user-config.yml@main
