@@ -10,11 +10,9 @@ manifest:
       remote: zmkfirmware
       revision: main
       import: app/west.yml
-
     - name: zmk-iqs5xx-driver
       remote: humancomputing
-      repo-path: modules/zmk-iqs5xx-driver
+      repo-path: zmk-keyboard-iqs5xx-dev
       revision: main
-
   self:
-    path: .
+    path: config
