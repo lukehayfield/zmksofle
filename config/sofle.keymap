@@ -18,14 +18,14 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TD_LS";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_SHIFT>, <&caps_word>, <&kp CAPSLOCK>;
+            bindings = <&kt LEFT_SHIFT>, <&caps_word>, <&kp CAPSLOCK>;
         };
 
         td_rs: td_rs {
             compatible = "zmk,behavior-tap-dance";
             label = "TD_RS";
             #binding-cells = <0>;
-            bindings = <&kp RIGHT_SHIFT>, <&caps_word>, <&kp CAPSLOCK>;
+            bindings = <&kt RIGHT_SHIFT>, <&caps_word>, <&kp CAPSLOCK>;
         };
 
         ht_hrm: ht_hrm {
