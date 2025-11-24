@@ -57,7 +57,7 @@
             label = "SK_QR";
             bindings = <&kp>;
             #binding-cells = <1>;
-            release-after-ms = <0>;
+            release-after-ms = <5000>;
             quick-release;
             lazy;
             ignore-modifiers;
