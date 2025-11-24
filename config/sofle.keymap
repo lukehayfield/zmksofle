@@ -18,14 +18,14 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TD_LS";
             #binding-cells = <0>;
-            bindings = <&sk LEFT_SHIFT>, <&caps_word>, <&kp CAPSLOCK>;
+            bindings = <&sk_qr LEFT_SHIFT>, <&caps_word>, <&kp CAPSLOCK>;
         };
 
         td_rs: td_rs {
             compatible = "zmk,behavior-tap-dance";
             label = "TD_RS";
             #binding-cells = <0>;
-            bindings = <&sk RIGHT_SHIFT>, <&caps_word>, <&kp CAPSLOCK>;
+            bindings = <&sk_qr RIGHT_SHIFT>, <&caps_word>, <&kp CAPSLOCK>;
         };
 
         ht_hrm: ht_hrm {
@@ -50,6 +50,17 @@
             tapping-term-ms = <300>;
             require-prior-idle-ms = <150>;
             retro-tap;
+        };
+
+        sk_qr: sk_qr {
+            compatible = "zmk,behavior-sticky-key";
+            label = "SK_QR";
+            bindings = <&kp>;
+            #binding-cells = <1>;
+            release-after-ms = <0>;
+            quick-release;
+            lazy;
+            ignore-modifiers;
         };
     };
 
