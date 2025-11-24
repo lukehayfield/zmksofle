@@ -19,6 +19,8 @@
             label = "TD_LS";
             #binding-cells = <0>;
             bindings = <&sk_qr LEFT_SHIFT>, <&caps_word>, <&kp CAPSLOCK>;
+
+            tapping-term-ms = <500>;
         };
 
         td_rs: td_rs {
@@ -26,6 +28,8 @@
             label = "TD_RS";
             #binding-cells = <0>;
             bindings = <&sk_qr RIGHT_SHIFT>, <&caps_word>, <&kp CAPSLOCK>;
+
+            tapping-term-ms = <500>;
         };
 
         ht_hrm: ht_hrm {
