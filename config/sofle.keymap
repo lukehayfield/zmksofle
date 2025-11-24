@@ -56,63 +56,55 @@
     keymap {
         compatible = "zmk,keymap";
 
-        qwerty {
+        LUKE {
             display-name = "Base";
             bindings = <
-&none    &none         &none                   &none               &none               &none                                             &none                &none                &none                &none                    &none     &none
-&kp ESC  &kp Q         &kp W                   &kp E               &kp R               &kp T                                             &kp Y                &kp U                &kp I                &kp O                    &kp P     &kp RA(NUMBER_3)
-&kp TAB  &kp A         &ht_hrm LEFT_CONTROL S  &ht_hrm LEFT_ALT D  &ht_hrm LEFT_GUI F  &kp G                                             &kp H                &ht_hrm RIGHT_GUI J  &ht_hrm RIGHT_ALT K  &ht_hrm RIGHT_CONTROL L  &kp SEMI  &kp SQT
-&td_ls   &kp Z         &kp X                   &kp C               &kp V               &kp B                  &none        &none         &kp N                &kp M                &kp COMMA            &kp DOT                  &kp FSLH  &td_rs
-                       &none                   &none               &mkp LCLK           &ht_mo 1 BACKSPACE     &kp SPACE    &kp SPACE     &ht_mo 2 RET         &mkp RCLK            &none                &none
+&none    &none  &none                   &none               &none               &none                                       &none         &none                &none                &none                    &none     &none
+&kp ESC  &kp Q  &kp W                   &kp E               &kp R               &kp T                                       &kp Y         &kp U                &kp I                &kp O                    &kp P     &kp RA(NUMBER_3)
+&kp TAB  &kp A  &ht_hrm LEFT_CONTROL S  &ht_hrm LEFT_ALT D  &ht_hrm LEFT_GUI F  &kp G                                       &kp H         &ht_hrm RIGHT_GUI J  &ht_hrm RIGHT_ALT K  &ht_hrm RIGHT_CONTROL L  &kp SEMI  &kp SQT
+&td_ls   &kp Z  &kp X                   &kp C               &kp V               &kp B               &none        &none      &kp N         &kp M                &kp COMMA            &kp DOT                  &kp FSLH  &td_rs
+                &none                   &none               &mkp LCLK           &ht_mo 1 BACKSPACE  &kp SPACE    &kp SPACE  &ht_mo 2 RET  &mkp RCLK            &none                &none
             >;
+
             label = "LUKE";
         };
 
-
-
-
-        number_layer {
+        SYMBOL {
             display-name = "Lower";
-
             bindings = <
-&none    &none         &none                   &none               &none               &none                                             &none      &none                &none                &none                    &none     &none
-&kp TILDE  &kp EXCLAMATION  &kp AT     &kp HASH   &kp DOLLAR  &kp PERCENT  &kp CARET       &kp AMPERSAND    &kp ASTERISK      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans
-&kp GRAVE  &kp N1           &kp N2     &kp N3     &kp N4      &kp N5       &kp N6          &kp N7           &kp N8            &kp N9                &kp N0                 &trans
-&trans     &kp PIPE         &kp UNDER  &kp MINUS  &kp PLUS    &kp EQUAL    &none        &none    &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp LEFT_BRACKET  &kp RIGHT_BRACKET     &kp BACKSLASH          &trans
-                       &none                   &none               &trans              &trans                 &trans       &trans        &trans     &trans               &none                &none
+&none      &none            &none      &none      &none       &none                          &none           &none            &none             &none                 &none                  &none
+&kp TILDE  &kp EXCLAMATION  &kp AT     &kp HASH   &kp DOLLAR  &kp PERCENT                    &kp CARET       &kp AMPERSAND    &kp ASTERISK      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans
+&kp GRAVE  &kp N1           &kp N2     &kp N3     &kp N4      &kp N5                         &kp N6          &kp N7           &kp N8            &kp N9                &kp N0                 &trans
+&trans     &kp PIPE         &kp UNDER  &kp MINUS  &kp PLUS    &kp EQUAL    &none     &none   &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp LEFT_BRACKET  &kp RIGHT_BRACKET     &kp BACKSLASH          &trans
+                            &none      &none      &trans      &trans       &trans    &trans  &trans          &trans           &none             &none
             >;
+
             label = "SYM";
         };
 
-
-
-
-        hotkey_layer {
+        NAVIGATION {
             display-name = "Raise";
-
             bindings = <
-&none    &none         &none                   &none               &none               &none                                             &none      &none                &none                &none                    &none     &none
-&none  &none  &none  &none   &none   &none   &none   &kp HOME      &kp UP            &kp END        &none  &none
-&none  &none  &none  &none   &none   &none   &none   &kp LEFT      &kp DOWN          &kp RIGHT      &none  &none
-&none  &none  &none  &none   &none   &none   &none        &none    &none   &kp LC(LEFT)  &kp LC(UP_ARROW)  &kp LC(RIGHT)  &none  &none
-                       &none                   &none               &trans              &trans                 &trans       &trans        &trans     &trans               &none                &none
+&none  &none  &none  &none  &none   &none                     &none   &none         &none             &none          &none  &none
+&none  &none  &none  &none  &none   &none                     &none   &kp HOME      &kp UP            &kp END        &none  &none
+&none  &none  &none  &none  &none   &none                     &none   &kp LEFT      &kp DOWN          &kp RIGHT      &none  &none
+&none  &none  &none  &none  &none   &none   &none     &none   &none   &kp LC(LEFT)  &kp LC(UP_ARROW)  &kp LC(RIGHT)  &none  &none
+              &none  &none  &trans  &trans  &trans    &trans  &trans  &trans        &none             &none
             >;
+
             label = "NAV";
         };
 
-
-
-
-        snap_layer {
+        SNAP {
             display-name = "Mouse";
-
             bindings = <
-&none    &none         &none                   &none               &none               &none                                             &none      &none                &none                &none                    &none     &none
-&bt BT_SEL 0  &none  &none     &kp C_VOL_UP  &none     &none   &none   &kp LA(LC(U))     &kp LA(LC(UP))    &kp LA(LC(I))      &none  &bt BT_SEL 3
-&bt BT_SEL 1  &none  &kp C_RW  &kp C_PP      &kp C_FF  &none   &none   &kp LA(LC(LEFT))  &kp LA(LC(RET))   &kp LA(LC(RIGHT))  &none  &bt BT_SEL 4
-&bt BT_SEL 2  &none  &none     &kp C_VOL_DN  &none     &none   &none        &none    &none   &kp LA(LC(J))     &kp LA(LC(DOWN))  &kp LA(LC(K))      &none  &bt BT_CLR
-                       &none                   &none               &trans              &trans                 &trans       &trans        &trans     &trans               &none                &none
+&none         &none  &none     &none         &none     &none                     &none   &none             &none             &none              &none  &none
+&bt BT_SEL 0  &none  &none     &kp C_VOL_UP  &none     &none                     &none   &kp LA(LC(U))     &kp LA(LC(UP))    &kp LA(LC(I))      &none  &bt BT_SEL 3
+&bt BT_SEL 1  &none  &kp C_RW  &kp C_PP      &kp C_FF  &none                     &none   &kp LA(LC(LEFT))  &kp LA(LC(RET))   &kp LA(LC(RIGHT))  &none  &bt BT_SEL 4
+&bt BT_SEL 2  &none  &none     &kp C_VOL_DN  &none     &none   &none     &none   &none   &kp LA(LC(J))     &kp LA(LC(DOWN))  &kp LA(LC(K))      &none  &bt BT_CLR
+                     &none     &none         &trans    &trans  &trans    &trans  &trans  &trans            &none             &none
             >;
+
             label = "SNAP";
         };
     };
