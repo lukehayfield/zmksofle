@@ -74,11 +74,11 @@
         LUKE {
             display-name = "Base";
             bindings = <
-&none    &none  &none                   &none               &none               &none                                       &none         &none                &none                &none                    &none     &none
-&kp ESC  &kp Q  &kp W                   &kp E               &kp R               &kp T                                       &kp Y         &kp U                &kp I                &kp O                    &kp P     &kp RA(NUMBER_3)
-&kp TAB  &kp A  &ht_hrm LEFT_CONTROL S  &ht_hrm LEFT_ALT D  &ht_hrm LEFT_GUI F  &kp G                                       &kp H         &ht_hrm RIGHT_GUI J  &ht_hrm RIGHT_ALT K  &ht_hrm RIGHT_CONTROL L  &kp SEMI  &kp SQT
-&td_ls   &kp Z  &kp X                   &kp C               &kp V               &kp B               &none        &none      &kp N         &kp M                &kp COMMA            &kp DOT                  &kp FSLH  &td_rs
-                &none                   &none               &mkp LCLK           &ht_mo 1 BACKSPACE  &kp SPACE    &kp SPACE  &ht_mo 2 RET  &mkp RCLK            &none                &none
+&none    &none  &none                   &none               &none               &none                                    &none         &none                &none                &none                    &none     &none
+&kp ESC  &kp Q  &kp W                   &kp E               &kp R               &kp T                                    &kp Y         &kp U                &kp I                &kp O                    &kp P     &kp RA(NUMBER_3)
+&kp TAB  &kp A  &ht_hrm LEFT_CONTROL S  &ht_hrm LEFT_ALT D  &ht_hrm LEFT_GUI F  &kp G                                    &kp H         &ht_hrm RIGHT_GUI J  &ht_hrm RIGHT_ALT K  &ht_hrm RIGHT_CONTROL L  &kp SEMI  &kp SQT
+&td_ls   &kp Z  &kp X                   &kp C               &kp V               &kp B               &none     &none      &kp N         &kp M                &kp COMMA            &kp DOT                  &kp FSLH  &td_rs
+                &none                   &none               &mkp LCLK           &ht_mo 1 BACKSPACE  &td_ls    &kp SPACE  &ht_mo 2 RET  &mkp RCLK            &none                &none
             >;
 
             label = "LUKE";
